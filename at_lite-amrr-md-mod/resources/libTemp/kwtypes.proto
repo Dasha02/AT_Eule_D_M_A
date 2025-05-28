@@ -1,0 +1,170 @@
+import "base.proto";     
+import "articles_base.proto";
+import "kwtypes_base.proto";
+
+message dayOfWeek : TAuxDicArticle {}
+message months : TAuxDicArticle {}
+message noun : TAuxDicArticle {}
+message noun1 : TAuxDicArticle {}
+message noun2 : TAuxDicArticle {}
+message noun3 : TAuxDicArticle {}
+message noun4 : TAuxDicArticle {}
+message noun5 : TAuxDicArticle {}
+message noun6 : TAuxDicArticle {}
+message noun7 : TAuxDicArticle {}
+message noun8 : TAuxDicArticle {}
+message noun9 : TAuxDicArticle {}
+message noun100 : TAuxDicArticle {}
+message prep1 : TAuxDicArticle {}
+message prep2 : TAuxDicArticle {}
+message prep3 : TAuxDicArticle {}
+message prep4 : TAuxDicArticle {}
+
+message adv1 : TAuxDicArticle {}
+message adv2 : TAuxDicArticle {}
+message adv3 : TAuxDicArticle {}
+message adv4 : TAuxDicArticle {}
+message adv5 : TAuxDicArticle {}
+message adv00 : TAuxDicArticle {}
+message adv20 : TAuxDicArticle {}
+message adv2540 : TAuxDicArticle {}
+message adv50 : TAuxDicArticle {}
+message adv8090 : TAuxDicArticle {}
+message adv75100 : TAuxDicArticle {}
+message adv100 : TAuxDicArticle {}
+message adv75 : TAuxDicArticle {}
+message advdop : TAuxDicArticle {}
+message pron : TAuxDicArticle {}
+message adj1 : TAuxDicArticle {}
+message adj2 : TAuxDicArticle {}
+message adj3 : TAuxDicArticle {}
+message adj4 : TAuxDicArticle {}
+message adj5 : TAuxDicArticle {}
+message adj100 : TAuxDicArticle {}
+message num1 : TAuxDicArticle {}
+message verb : TAuxDicArticle {}
+message ordinals : TAuxDicArticle {}
+message cardinals : TAuxDicArticle {}
+message fuzzy : TAuxDicArticle {}
+
+message nounFuzzyCount : TAuxDicArticle {}
+message adjFuzzyCountT1 : TAuxDicArticle {}
+message adjFuzzyCountT2 : TAuxDicArticle {}
+message adjFuzzyCountT3 : TAuxDicArticle {}
+
+message nounFuzzyLength : TAuxDicArticle {}
+message adjFuzzyLengthT1 : TAuxDicArticle {}
+message adjFuzzyLengthT2 : TAuxDicArticle {}
+message adjFuzzyLengthT3 : TAuxDicArticle {}
+
+message nounFuzzyArea : TAuxDicArticle {}
+message adjFuzzyAreaT1 : TAuxDicArticle {}
+message adjFuzzyAreaT2 : TAuxDicArticle {}
+message adjFuzzyAreaT3 : TAuxDicArticle {}
+
+message nounFuzzyLeukocytes : TAuxDicArticle {}
+message adjFuzzyLeukocytesT1 : TAuxDicArticle {}
+message adjFuzzyLeukocytesT2 : TAuxDicArticle {}
+message adjFuzzyLeukocytesT3 : TAuxDicArticle {}
+
+message nounFuzzyVolume : TAuxDicArticle {}
+message adjFuzzyVolumeT1 : TAuxDicArticle {}
+message adjFuzzyVolumeT2 : TAuxDicArticle {}
+message adjFuzzyVolumeT3 : TAuxDicArticle {}
+
+message nounFuzzyMass : TAuxDicArticle {}
+message adjFuzzyMassT1 : TAuxDicArticle {}
+message adjFuzzyMassT2 : TAuxDicArticle {}
+message adjFuzzyMassT3 : TAuxDicArticle {}
+
+message nounFuzzyTime : TAuxDicArticle {}
+message adjFuzzyTimeT1 : TAuxDicArticle {}
+message adjFuzzyTimeT2 : TAuxDicArticle {}
+message adjFuzzyTimeT3 : TAuxDicArticle {}
+
+message nounFuzzyTemperature : TAuxDicArticle {}
+message adjFuzzyTemperatureT1 : TAuxDicArticle {}
+message adjFuzzyTemperatureT12 : TAuxDicArticle {}
+message adjFuzzyTemperatureT2 : TAuxDicArticle {}
+message adjFuzzyTemperatureT23 : TAuxDicArticle {}
+message adjFuzzyTemperatureT3 : TAuxDicArticle {}
+
+message nounFuzzyForce : TAuxDicArticle {}
+message adjFuzzyForceT1 : TAuxDicArticle {}
+message adjFuzzyForceT2 : TAuxDicArticle {}
+message adjFuzzyForceT3 : TAuxDicArticle {}
+
+message nounFuzzyAngle : TAuxDicArticle {}
+message adjFuzzyAngleT1 : TAuxDicArticle {}
+message adjFuzzyAngleT2 : TAuxDicArticle {}
+message adjFuzzyAngleT3 : TAuxDicArticle {}
+
+message nounFuzzyDensity : TAuxDicArticle {}
+message adjFuzzyDensityT1 : TAuxDicArticle {}
+message adjFuzzyDensityT2 : TAuxDicArticle {}
+message adjFuzzyDensityT3 : TAuxDicArticle {}
+
+message nounFuzzyFrequency : TAuxDicArticle {}
+message adjFuzzyFrequencyT1 : TAuxDicArticle {}
+message adjFuzzyFrequencyT2 : TAuxDicArticle {}
+message adjFuzzyFrequencyT3 : TAuxDicArticle {}
+
+message nounFuzzySpeed : TAuxDicArticle {}
+message adjFuzzySpeedT1 : TAuxDicArticle {}
+message adjFuzzySpeedT2 : TAuxDicArticle {}
+message adjFuzzySpeedT3 : TAuxDicArticle {}
+
+message nounFuzzyAcceleration : TAuxDicArticle {}
+message adjFuzzyAccelerationT1 : TAuxDicArticle {}
+message adjFuzzyAccelerationT2 : TAuxDicArticle {}
+message adjFuzzyAccelerationT3 : TAuxDicArticle {}
+
+message nounFuzzyPressure : TAuxDicArticle {}
+message adjFuzzyPressureT1 : TAuxDicArticle {}
+message adjFuzzyPressureT2 : TAuxDicArticle {}
+message adjFuzzyPressureT3 : TAuxDicArticle {}
+
+message adjFuzzyBodyTemperatureT1 : TAuxDicArticle {}
+message adjFuzzyBodyTemperatureT2 : TAuxDicArticle {}
+message adjFuzzyBodyTemperatureT23 : TAuxDicArticle {}
+message adjFuzzyBodyTemperatureT3 : TAuxDicArticle {}
+message adjFuzzyBodyTemperatureT30 : TAuxDicArticle {}
+
+message adjFuzzyThroatPainT1 : TAuxDicArticle {}
+message adjFuzzyThroatPainT2 : TAuxDicArticle {}
+message adjFuzzyThroatPainT3 : TAuxDicArticle {}
+
+message adjFuzzyMucousColorT1 : TAuxDicArticle {}
+message adjFuzzyMucousColorT2 : TAuxDicArticle {}
+message adjFuzzyMucousColorT3 : TAuxDicArticle {}
+
+message adjFuzzyTonsilPlaqueColorT1 : TAuxDicArticle {}
+message adjFuzzyTonsilPlaqueColorT2 : TAuxDicArticle {}
+message adjFuzzyTonsilPlaqueColorT3 : TAuxDicArticle {}
+
+message adjFuzzySwallowingPainT1 : TAuxDicArticle {}
+message adjFuzzySwallowingPainT2 : TAuxDicArticle {}
+message adjFuzzySwallowingPainT3 : TAuxDicArticle {}
+
+message nounFuzzyPulse : TAuxDicArticle {}
+message adjFuzzyPulseT1 : TAuxDicArticle {}
+message adjFuzzyPulseT2 : TAuxDicArticle {}
+message adjFuzzyPulseT3 : TAuxDicArticle {}
+
+message adjFuzzyNasalDischargeT1 : TAuxDicArticle {}
+message adjFuzzyNasalDischargeT2 : TAuxDicArticle {}
+message adjFuzzyNasalDischargeT3 : TAuxDicArticle {}
+
+message adjFuzzyPlaqueAreaT1 : TAuxDicArticle {}
+message adjFuzzyPlaqueAreaT2 : TAuxDicArticle {}
+message adjFuzzyPlaqueAreaT3 : TAuxDicArticle {}
+
+message adjFuzzySugarLevelT01 : TAuxDicArticle {}
+
+message nounadd1 : TAuxDicArticle {}
+message nounadd2 : TAuxDicArticle {}
+message nounadd3 : TAuxDicArticle {}
+message nounadd4 : TAuxDicArticle {}
+message nounadd5 : TAuxDicArticle {}
+message nounadd6 : TAuxDicArticle {}
+

@@ -1,0 +1,10 @@
+#encoding "utf-8"
+
+// Все нефакторы в одном файле с пометкой части речи
+NonFactAdv -> "примерно" | "около" | "приблизительно" | "где-то" | "кое-как" interp(NonFactor.Adv);
+NonFactAdj -> "некий" | "какой-то" | "некоторый" | "определенный" interp(NonFactor.Adj);
+NonFactNoun -> "неопределенность" | "сомнение" | "догадка" interp(NonFactor.Noun);
+NonFactVerb -> "казаться" | "предполагать" | "сомневаться" interp(NonFactor.Verb);
+
+// Главное правило
+NonFactor -> NonFactAdv | NonFactAdj | NonFactNoun | NonFactVerb;

@@ -1,0 +1,12 @@
+#ifndef KFVERIFIER_GLOBAL_H
+#define KFVERIFIER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(KFVERIFIER_LIBRARY)
+#  define KFVERIFIERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define KFVERIFIERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // KFVERIFIER_GLOBAL_H

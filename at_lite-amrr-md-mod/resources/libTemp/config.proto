@@ -1,0 +1,31 @@
+encoding "utf8";
+TTextMinerConfig {
+  Dictionary = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/dic.gzt";     
+  PrettyOutput = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/debug.html"; 
+  Input = {
+    File = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/input.txt";          
+    Type = dpl;               
+  }
+  Articles = [
+    { Name = "temporal" },
+    { Name = "fuzzy" },
+    { Name = "fuzzy_indefinite" },
+    { Name = "fuzzy_inaccurate" }
+  ]
+  Facts = [
+    { Name = "TempLexeme" },
+    { Name = "FuzzyLexeme" },
+    { Name = "FuzzyIndefiniteLexeme" },
+    { Name = "FuzzyInaccurateLexeme" }
+  ]
+  Output = 
+  {
+    File = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/output.xml";        
+    Format = xml;
+  }//,
+ // {
+ //   File = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/output1.txt";        
+ //   Format = text;
+ // }
+  
+}

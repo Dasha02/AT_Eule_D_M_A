@@ -1,0 +1,13 @@
+иногда чуть-чуть болела голова 
+	TempLexeme
+	{
+		Period = иногда
+	}
+	FuzzyLexeme
+	{
+		Indistinct = иногда
+	}
+	FuzzyLexeme
+	{
+		Indistinct = чуть-чуть
+	}

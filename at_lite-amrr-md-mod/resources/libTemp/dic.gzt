@@ -1,0 +1,35 @@
+encoding "utf8";
+
+import "base.proto";     
+import "articles_base.proto";
+
+import "facttypes.proto";
+import "kwtypes.proto";
+
+import "preps.gzt";
+import "nouns.gzt";
+import "advs.gzt";
+import "adjs.gzt";
+import "nums.gzt";
+import "freefuzzy.gzt";
+import "verbs.gzt";
+
+TAuxDicArticle "temporal"
+{
+    key = { "tomita:temporal_lex.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "fuzzy"
+{
+    key = { "tomita:fuzzy_lex.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "fuzzy_indefinite"
+{
+    key = { "tomita:fuzzy_indefinite_lex.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "fuzzy_inaccurate"
+{
+    key = { "tomita:fuzzy_inaccurate_lex.cxx" type=CUSTOM }
+}

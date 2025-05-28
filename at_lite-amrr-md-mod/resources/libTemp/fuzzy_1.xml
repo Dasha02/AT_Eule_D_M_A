@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='utf-8'?>
+<lvlist problem-info="Медицинская диагностика" creation-date="24.01.2004">
+	<typical-mf id="type01">
+		<point x="0" y="1" />
+		<point x="0,1" y="0,98" />
+		<point x="0,2" y="0,8" />
+		<point x="0,3" y="0,5" />
+		<point x="0,4" y="0,3" />
+		<point x="0,5" y="0,15" />
+		<point x="0,6" y="0,1" />a
+		<point x="0,7" y="0,04" />
+		<point x="0,8" y="0,02" />
+		<point x="0,9" y="0" />
+		<point x="1" y="0" />
+	</typical-mf>
+	<typical-mf id="type1">
+		<point x="0" y="1" />
+		<point x="0,1" y="0,98" />
+		<point x="0,2" y="0,9" />
+		<point x="0,3" y="0,78" />
+		<point x="0,4" y="0,55" />
+		<point x="0,5" y="0,29" />
+		<point x="0,6" y="0,15" />
+		<point x="0,7" y="0,09" />
+		<point x="0,8" y="0,05" />
+		<point x="0,9" y="0,02" />
+		<point x="1" y="0" />
+	</typical-mf>
+	<typical-mf id="type12">
+		<point x="0" y="0,4" />
+		<point x="0,1" y="0,73" />
+		<point x="0,2" y="0,93" />
+		<point x="0,3" y="1" />
+		<point x="0,4" y="0,93" />
+		<point x="0,5" y="0,73" />
+		<point x="0,6" y="0,45" />
+		<point x="0,7" y="0,26" />
+		<point x="0,8" y="0,18" />
+		<point x="0,9" y="0,13" />
+		<point x="1" y="0,1" />
+	</typical-mf>
+	<typical-mf id="type2">
+		<point x="0" y="0" />
+		<point x="0,1" y="0,07" />
+		<point x="0,2" y="0,25" />
+		<point x="0,3" y="0,65" />
+		<point x="0,4" y="0,93" />
+		<point x="0,5" y="1" />
+		<point x="0,6" y="0,93" />
+		<point x="0,7" y="0,65" />
+		<point x="0,8" y="0,25" />
+		<point x="0,9" y="0,07" />
+		<point x="1" y="0" />
+	</typical-mf>
+	<typical-mf id="type23">
+		<point x="0" y="0,1" />
+		<point x="0,1" y="0,13" />
+		<point x="0,2" y="0,18" />
+		<point x="0,3" y="0,25" />
+		<point x="0,4" y="0,45" />
+		<point x="0,5" y="0,73" />
+		<point x="0,6" y="0,93" />
+		<point x="0,7" y="1" />
+		<point x="0,8" y="0,93" />
+		<point x="0,9" y="0,73" />
+		<point x="1" y="0,45" />
+	</typical-mf>
+	<typical-mf id="type3">
+		<point x="0" y="0" />
+		<point x="0,1" y="0,02" />
+		<point x="0,2" y="0,05" />
+		<point x="0,3" y="0,09" />
+		<point x="0,4" y="0,15" />
+		<point x="0,5" y="0,29" />
+		<point x="0,6" y="0,55" />
+		<point x="0,7" y="0,78" />
+		<point x="0,8" y="0,9" />
+		<point x="0,9" y="0,98" />
+		<point x="1" y="1" />
+	</typical-mf>
+	<typical-mf id="type30">
+		<point x="0" y="0" />
+		<point x="0,1" y="0" />
+		<point x="0,2" y="0,02" />
+		<point x="0,3" y="0,04" />
+		<point x="0,4" y="0,1" />
+		<point x="0,5" y="0,15" />
+		<point x="0,6" y="0,3" />
+		<point x="0,7" y="0,5" />
+		<point x="0,8" y="0,8" />
+		<point x="0,9" y="0,98" />
+		<point x="1" y="1" />
+	</typical-mf>
+	<lv name="количество" min-value="0" max-value="1" measure-item="">
+		<alias>величина</alias>
+		<alias>критерий</alias>
+		<alias>размер</alias>
+		<alias>мера</alias>
+		<alias>степень</alias>
+		<alias>уровень</alias>
+		<alias>численность</alias>
+		<alias>число</alias>
+		<mf name="малый" typical="type1">
+			<alias>маленький</alias>
+			<alias>низкий</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+			<alias>нормальный</alias>
+		</mf>
+		<mf name="большой" typical="type3">
+			<alias>высокий</alias>
+			<alias>многий</alias>
+		</mf>
+	</lv>
+	<lv name="ДЛИНА" min-value="0" max-value="1" measure-item="метр">
+		<alias>величина</alias>
+		<alias>габарит</alias>
+		<alias>глубина</alias>
+		<alias>протяженность</alias>
+		<alias>расстояние</alias>
+		<alias>размер</alias>
+		<alias>рост</alias>
+		<alias>ширина</alias>
+		<mf name="малый" typical="type1">
+			<alias>маленький</alias>
+			<alias>короткий</alias>
+			<alias>узкий</alias>
+			<alias>низкий</alias>
+			<alias>мелкий</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+			<alias>нормальный</alias>
+		</mf>
+		<mf name="большой" typical="type3">
+			<alias>длинный</alias>
+			<alias>широкий</alias>
+			<alias>высокий</alias>
+			<alias>глубокий</alias>
+		</mf>
+	</lv>
+	<lv name="площадь" min-value="0" max-value="1" measure-item="метр в квадрате">
+		<alias>поверхность</alias>
+		<mf name="малый" typical="type1">
+			<alias>маленький</alias>
+			<alias>небольшой</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="большой" typical="type3">
+			<alias>громадный</alias>
+		</mf>
+	</lv>
+	<lv name="лейкоциты" min-value="0" max-value="1" measure-item="метр в квадрате">
+		<mf name="малый" typical="type1">
+			<alias>маленький</alias>
+			<alias>небольшой</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="большой" typical="type3">
+			<alias>громадный</alias>
+		</mf>
+	</lv>
+	<lv name="объем" min-value="0" max-value="1" measure-item="метр в кубе">
+		<alias>вместимость</alias>
+		<alias>емкость</alias>
+		<alias>пространство</alias>
+		<mf name="малый" typical="type1">
+			<alias>маленький</alias>
+			<alias>небольшой</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="большой" typical="type3" />
+	</lv>
+	<lv name="масса" min-value="0" max-value="1" measure-item="кг">
+		<alias>вес</alias>
+		<alias>груз</alias>
+		<alias>тяжесть</alias>
+		<mf name="легкий" typical="type1">
+			<alias>маленький</alias>
+			<alias>малый</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="тяжелый" typical="type3">
+			<alias>большой</alias>
+		</mf>
+	</lv>
+	<lv name="время" min-value="0" max-value="1" measure-item="секунды">
+		<alias>период</alias>
+		<alias>продолжительность</alias>
+		<mf name="быстрый" typical="type1">
+			<alias>малый</alias>
+			<alias>маленький</alias>
+		</mf>
+		<mf name="средний" typical="type3">
+			<alias>обычный</alias>
+			<alias>нормальный</alias>
+			<alias>достаточный</alias>
+		</mf>
+		<mf name="долгий" typical="type3">
+			<alias>большой</alias>
+		</mf>
+	</lv>
+	<lv name="температура" min-value="0" max-value="1" measure-item="градус Цельсия">
+		<alias>теплота</alias>
+		<mf name="холодный" typical="type1" />
+		<mf name="прохладный" typical="type12">
+			<alias>ниже нормы</alias>
+			<alias>пониженная</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+			<alias>нормальный</alias>
+		</mf>
+		<mf name="теплый" typical="type23">
+			<alias>выше нормы</alias>
+			<alias>повышенная</alias>
+		</mf>
+		<mf name="горячий" typical="type3">
+			<alias>высокий</alias>
+		</mf>
+	</lv>
+	<lv name="сила" min-value="0" max-value="1" measure-item="">
+		<mf name="слабый" typical="type1">
+			<alias>малый</alias>
+			<alias>маленький</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="сильный" typical="type3">
+			<alias>большой</alias>
+			<alias>высокий</alias>
+		</mf>
+	</lv>
+	<lv name="угол" min-value="0" max-value="1" measure-item="градус">
+		<mf name="острый" typical="type1">
+			<alias>малый</alias>
+			<alias>небольшой</alias>
+			<alias>маленький</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+			<alias>нормальный</alias>
+			<alias>нужный</alias>
+			<alias>необходимый</alias>
+		</mf>
+		<mf name="тупой" typical="type3">
+			<alias>большой</alias>
+			<alias>немаленький</alias>
+		</mf>
+	</lv>
+	<lv name="плотность" min-value="0" max-value="1" measure-item="">
+		<mf name="низкий" typical="type1">
+			<alias>малый</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="высокий" typical="type3">
+			<alias>большой</alias>
+		</mf>
+	</lv>
+	<lv name="частота" min-value="0" max-value="1" measure-item="">
+		<alias>периодичность</alias>
+		<mf name="редкий" typical="type1">
+			<alias>низкий</alias>
+			<alias>малый</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="частота" typical="type3">
+			<alias>высокий</alias>
+			<alias>большой</alias>
+		</mf>
+	</lv>
+	<lv name="скорость" min-value="0" max-value="1" measure-item="км в час">
+		<alias>быстрота</alias>
+		<alias>стремительность</alias>
+		<mf name="медленный" typical="type1">
+			<alias>малый</alias>
+			<alias>небольшой</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="быстрый" typical="type3">
+			<alias>большой</alias>
+		</mf>
+	</lv>
+	<lv name="ускорение" min-value="0" max-value="1" measure-item="">
+		<alias>убыстрение</alias>
+		<mf name="малый" typical="type1">
+			<alias>низкий</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="большой" typical="type3">
+			<alias>высокий</alias>
+		</mf>
+	</lv>
+	<lv name="давление" min-value="0" max-value="1" measure-item="">
+		<mf name="НИЗКИЙ" typical="type1">
+			<alias>маленький</alias>
+			<alias>малый</alias>
+		</mf>
+		<mf name="средний" typical="type2">
+			<alias>обычный</alias>
+		</mf>
+		<mf name="высокий" typical="type3">
+			<alias>большой</alias>
+		</mf>
+	</lv>
+	<lv name="температура тела" min-value="34" max-value="42" measure-item="градус Цельсия">
+		<mf name="низкая" typical="type1">
+			<alias>незначительная</alias>
+			<alias>пониженная</alias>
+		</mf>
+		<mf name="нормальная" typical="type2">
+			<alias>в норме</alias>
+			<alias>допустимая</alias>
+			<alias>фебрильная</alias>
+		</mf>
+		<mf name="повышенная" typical="type23">
+			<alias>субфебрильная</alias>
+			<alias>выше средней</alias>
+		</mf>
+		<mf name="высокая" typical="type3">
+			<alias>опасная</alias>
+		</mf>
+		<mf name="очень высокая" typical="type30">
+			<alias>критичная</alias>
+		</mf>
+	</lv>
+	<lv name="боль в горле" min-value="0" max-value="1" measure-item="">
+		<mf name="слабая" typical="type1">
+			<alias>незначительная</alias>
+		</mf>
+		<mf name="выраженная" typical="type2">
+			<alias>резкая</alias>
+		</mf>
+		<mf name="сильная" typical="type3">
+			<alias>невыносимая</alias>
+		</mf>
+	</lv>
+	<lv name="цвет слизистой оболочки" min-value="0" max-value="1" measure-item="">
+		<mf name="розоватый" typical="type1" />
+		<mf name="красноватый" typical="type2" />
+		<mf name="бордовый" typical="type3" />
+	</lv>
+	<lv name="цвет налета на миндалинах" min-value="0" max-value="1" measure-item="">
+		<mf name="белый-пленчатый" typical="type1" />
+		<mf name="серовато-белый пленчатый" typical="type2" />
+		<mf name="серовато-пленчатый" typical="type3" />
+	</lv>
+	<lv name="боль при глотании" min-value="0" max-value="1" measure-item="">
+		<mf name="слабая" typical="type1">
+			<alias>незначительная</alias>
+		</mf>
+		<mf name="ощутимая" typical="type2">
+			<alias>резкая</alias>
+		</mf>
+		<mf name="сильная" typical="type3">
+			<alias>невыносимая</alias>
+		</mf>
+	</lv>
+	<lv name="пульс" min-value="0" max-value="1" measure-item="удар в минуту">
+		<mf name="слабый" typical="type1" />
+		<mf name="нормальный" typical="type2" />
+		<mf name="частый" typical="type3" />
+	</lv>
+	<lv name="выделения из носа" min-value="100" max-value="450" measure-item="мл в сутки">
+		<mf name="незначительные" typical="type1">
+			<alias>слабые</alias>
+			<alias>незаметные</alias>
+		</mf>
+		<mf name="повышенные" typical="type2">
+			<alias>беспокоящие</alias>
+		</mf>
+		<mf name="обильные" typical="type3">
+			<alias>сильные</alias>
+		</mf>
+	</lv>
+	<lv name="область покрытия налетом" min-value="0" max-value="40" measure-item="мм в квадрате">
+		<mf name="незначительная" typical="type1" />
+		<mf name="нормальная" typical="type2">
+			<alias>допустимая</alias>
+		</mf>
+		<mf name="большая" typical="type3" />
+	</lv>
+	<lv name="Уровень сахара" min-value="1" max-value="16" measure-item="ммоль/л">
+		<alias>Содержание сахара</alias>
+		<alias>Показатель сахара</alias>
+		<mf name="Гипогликемия" typical="type01">
+			<alias>А</alias>
+		</mf>
+	</lv>
+</lvlist>

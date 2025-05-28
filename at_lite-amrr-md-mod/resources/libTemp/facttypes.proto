@@ -1,0 +1,57 @@
+﻿import "base.proto";
+import "facttypes_base.proto";
+
+
+message TempLexeme: NFactType.TFact 
+{
+    optional string Point = 1;
+	optional string Interval = 2;
+	optional string Period = 3;
+	optional string Start = 4;
+	optional string End = 5;
+	optional string Duration = 6;
+}
+
+message FuzzyLexeme: NFactType.TFact 
+{
+    	optional string FuzzyT1 = 1;
+    	optional string FuzzyT2 = 2;
+    	optional string FuzzyT3= 3;
+    	optional string FuzzyT12 = 4;
+    	optional string FuzzyT23 = 5;
+    	optional string FuzzyT30 = 6;
+    	optional string FuzzyT01 = 7;
+}
+
+message FuzzyIndefiniteLexeme: NFactType.TFact 
+{
+    	optional string Indefinite_00_10 = 1;
+    	optional string Indefinite_05_20 = 2;
+    	optional string Indefinite_25_40 = 3;
+        optional string Indefinite_40_60 = 4;
+        optional string Indefinite_50_75 = 5;
+        optional string Indefinite_80_90 = 6;
+        optional string Indefinite_75_100 = 7;
+        optional string Indefinite_90_100 = 8;
+}
+
+message FuzzyInaccurateLexeme: NFactType.TFact 
+{
+    	optional string rost_lemma = 1;
+    	optional string weight_lemma = 2;
+    	optional string temperature_lemma = 3;
+    	optional string pulse_lemma = 4;
+    	optional string saturation_lemma = 5;
+    	optional string sugar_lemma = 6;
+    	optional string number1 = 7;
+    	optional string number2 = 8;
+    	optional string rost_unit = 9;
+    	optional string weight_unit = 10;
+    	optional string temperature_unit = 11;
+    	optional string pulse_unit = 12;
+    	optional string saturation_unit = 13;
+    	optional string sugar_unit = 14;
+    	optional string pressure_lemma = 15;
+    	optional string pressure_unit = 16;
+    	
+}

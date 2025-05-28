@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<knowledge-base>
+ <types>
+  <type id="ТИП1" meta="number" desc="number">
+   <from>0</from>
+   <to>100000</to>
+  </type>
+  <type id="ТИП4" meta="string" desc="string">
+   <value>примерно 2 раза в день</value>
+  </type>
+  <type id="ТИП3" meta="string" desc="string">
+   <value>раз в день</value>
+  </type>
+  <type id="ТИП2" meta="string" desc="string">
+   <value>ч</value>
+  </type>
+ </types>
+ <classes>
+  <class id="Пациент" desc="Пациент">
+   <properties>
+    <property id="Атрибут1" source="inferred" type="ТИП2" desc="Атрибут1"/>
+    <property id="Атрибут2" source="inferred" type="ТИП3" desc="Атрибут2"/>
+    <property id="Атрибут3" source="inferred" type="ТИП4" desc="Атрибут3"/>
+   </properties>
+  </class>
+  <class id="world" desc="Класс верхнего уровня, включающий в себя экземпляры других классов и общие правила">
+   <properties>
+    <property id="Пациент" create="true" source="none" type="Пациент" desc="Пациент"/>
+   </properties>
+   <rules>
+    <rule id="t0" meta="simple" desc="Т-правило">
+     <condition>
+      <CondEvRel Value="d">
+       <eq>
+        <ref id="Пациент">
+         <ref id="Атрибут3"/>
+        </ref>
+        <value>примерно 2 раза в день УВЕРЕННОСТЬ [50;75] ТОЧНОСТЬ 0</value>
+       </eq>
+       <Event Name="Событие1"/>
+      </CondEvRel>
+     </condition>
+     <action>
+      <assign>
+       <ref id="Пациент">
+        <ref id="Атрибут1"/>
+       </ref>
+       <value>ч</value>
+       <with belief="50" probability="100" accuracy="0"/>
+      </assign>
+     </action>
+    </rule>
+   </rules>
+  </class>
+ </classes>
+ <IntervalsAndEvents>
+  <Intervals/>
+  <Events>
+   <Event Name="Событие1">
+    <Formula>
+     <EqOp Value="eq">
+      <Attribute Value="Пациент.Атрибут2"/>
+      <String Value="раз в день"/>
+     </EqOp>
+    </Formula>
+   </Event>
+  </Events>
+ </IntervalsAndEvents>
+</knowledge-base>

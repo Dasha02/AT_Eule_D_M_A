@@ -1,0 +1,583 @@
+encoding "utf8";
+
+import "kwtypes.proto";
+import "articles_base.proto";
+
+adj1 "вчерашний" {
+	key = "вчерашний"
+}
+
+adj1 "данный" {
+	key = "данный"
+}
+
+adj1 "сегодняшний" {
+	key = "сегодняшний"
+}
+
+adj1 "текущий" {
+	key = "текущий"
+}
+
+adj1 "завтрашний" {
+	key = "завтрашний"
+}
+
+adj1 "зимний" {
+	key = "зимний"
+}
+
+adj1 "летний" {
+	key = "летний"
+}
+
+adj1 "весенний" {
+	key = "весенний"
+}
+
+adj1 "осенний" {
+	key = "осенний"
+}
+
+adj1 "утренний" {
+	key = "утренний"
+}
+
+adj1 "дневной" {
+	key = "дневной"
+}
+
+adj1 "вечерний" {
+	key = "вечерний"
+}
+
+adj1 "ночной" {
+	key = "ночной"
+}
+
+adj1 "январский" {
+	key = "январский"
+}
+
+adj1 "февральский" {
+	key = "февральский"
+}
+
+adj1 "мартовский" {
+	key = "мартовский"
+}
+
+adj1 "апрельский" {
+	key = "апрельский"
+}
+
+adj1 "майский" {
+	key = "майский"
+}
+
+adj1 "июньский" {
+	key = "июньский"
+}
+
+adj1 "июльский" {
+	key = "июльский"
+}
+
+adj1 "августовский" {
+	key = "августовский"
+}
+
+adj1 "сентябрьский" {
+	key = "сентябрьский"
+}
+
+adj1 "октябрьский" {
+	key = "октябрьский"
+}
+
+adj1 "ноябрьский" {
+	key = "ноябрьский"
+}
+
+adj1 "декабрьский" {
+	key = "декабрьский"
+}
+
+adj1 "прошлый" {
+	key = "прошлый"
+} 
+
+adj1 "следующий" {
+	key = "следующий"
+} 
+
+adj1 "это" {
+	key = "это"
+}
+
+adj1 "то" {
+	key = "то"
+}
+
+adj3 "последний" {
+	key = "последний"
+}
+
+adj5 "еженедельный" {
+	key = "еженедельный"
+}
+
+adj5 "посуточный" {
+	key = "посуточный"
+}
+
+adj5 "ежегодный" {
+	key = "ежегодный"
+}
+
+adj5 "ежемесячный" {
+	key = "ежемесячный"
+}
+
+adj5 "ежедневный" {
+	key = "ежедневный"
+}
+
+adj5 "поминутный" {
+	key = "поминутный"
+}
+
+adj5 "ежеминутный" {
+	key = "ежеминутный"
+}
+
+adj5 "ежеквартальный" {
+	key = "ежеквартальный"
+}
+
+adj5 "ежедекадный" {
+	key = "ежедекадный"
+}
+
+adj5 "еженощный" {
+	key = "еженощный"
+}
+
+adj100 "периодический" {
+	key = "периодический"
+}
+
+adj100 "редкий" {
+	key = "редкий"
+}
+
+adj100 "частый" {
+	key = "частый"
+}
+
+adj100 "регулярный" {
+	key = "регулярный" | "регулярная" | "регулярное"
+}
+
+adj100 "поздний" {
+	key = "поздний" 
+}
+
+adj100 "ранний" {
+	key = "ранний"
+	lemma = "ранний"
+}
+
+adj100 "длительный" {
+	key = "длительный"
+}
+
+
+adjFuzzyCountT1 "малый" {
+	key = "маленький" | "низкий" | "малый"
+}
+
+adjFuzzyCountT2 "средний" {
+	key = "обычный" | "нормальный" | "средний"
+}
+
+adjFuzzyCountT3 "большой" {
+	key = "высокий" | "многий" | "большой"
+}
+
+adjFuzzyLengthT1 {
+    key = "малый" | 
+          "маленький" | 
+          "короткий" | 
+          "узкий" | 
+          "низкий" | 
+          "мелкий"
+}
+
+adjFuzzyLengthT2 {
+    key = "средний" | 
+          "обычный" | 
+          "нормальный"
+}
+
+adjFuzzyLengthT3 {
+    key = "большой" | 
+          "длинный" | 
+          "широкий" | 
+          "высокий" | 
+          "глубокий"
+}
+
+adjFuzzyAreaT1 {
+    key = "малый" | 
+          "маленький" | 
+          "небольшой"
+}
+
+adjFuzzyAreaT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyAreaT3 {
+    key = "большой" | 
+          "громадный"
+}
+
+adjFuzzyLeukocytesT1 {
+    key = "малый" | 
+          "маленький" | 
+          "небольшой"
+}
+
+adjFuzzyLeukocytesT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyLeukocytesT3 {
+    key = "большой" | 
+          "громадный"
+}
+
+adjFuzzyVolumeT1 {
+    key = "малый" | 
+          "маленький" | 
+          "небольшой"
+}
+
+adjFuzzyVolumeT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyVolumeT3 {
+    key = "большой"
+}
+
+adjFuzzyMassT1 {
+    key = "легкий" | 
+          "маленький" | 
+          "малый"
+}
+
+adjFuzzyMassT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyMassT3 {
+    key = "тяжелый" | 
+          "большой"
+}
+
+adjFuzzyTimeT1 {
+    key = "быстрый" | 
+          "малый" | 
+          "маленький"
+}
+
+adjFuzzyTimeT2 {
+    key = "средний" | 
+          "обычный" | 
+          "нормальный" | 
+          "достаточный"
+}
+
+adjFuzzyTimeT3 {
+    key = "долгий" | 
+          "большой"
+}
+
+adjFuzzyTemperatureT1 {
+    key = "холодный"
+}
+
+adjFuzzyTemperatureT12 {
+    key = "прохладный" | 
+          "ниже нормы" | 
+          "пониженная"
+}
+
+adjFuzzyTemperatureT2 {
+    key = "средний" | 
+          "обычный" | 
+          "нормальный"
+}
+
+adjFuzzyTemperatureT23 {
+    key = "теплый" | 
+          "выше нормы" | 
+          "повышенная"
+}
+
+adjFuzzyTemperatureT3 {
+    key = "горячий" | 
+          "высокий"
+}
+
+adjFuzzyForceT1 {
+    key = "слабый" | 
+          "малый" | 
+          "маленький"
+}
+
+adjFuzzyForceT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyForceT3 {
+    key = "сильный" | 
+          "большой" | 
+          "высокий"
+}
+
+adjFuzzyAngleT1 {
+    key = "острый" | 
+          "малый" | 
+          "небольшой" | 
+          "маленький"
+}
+
+adjFuzzyAngleT2 {
+    key = "средний" | 
+          "обычный" | 
+          "нормальный" | 
+          "нужный" | 
+          "необходимый"
+}
+
+adjFuzzyAngleT3 {
+    key = "тупой" | 
+          "большой" | 
+          "немаленький"
+}
+
+adjFuzzyDensityT1 {
+    key = "низкий" | 
+          "малый"
+}
+
+adjFuzzyDensityT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyDensityT3 {
+    key = "высокий" | 
+          "большой"
+}
+
+adjFuzzyFrequencyT1 {
+    key = "низкий" | 
+          "малый"
+}
+
+adjFuzzyFrequencyT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyFrequencyT3 {
+    key = "частота" | 
+          "высокий" | 
+          "большой"
+}
+
+adjFuzzySpeedT1 {
+    key = "медленный" | 
+          "малый" | 
+          "небольшой"
+}
+
+adjFuzzySpeedT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzySpeedT3 {
+    key = "быстрый" | 
+          "большой"
+}
+
+adjFuzzyAccelerationT1 {
+    key = "малый" | 
+          "низкий"
+}
+
+adjFuzzyAccelerationT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyAccelerationT3 {
+    key = "большой" | 
+          "высокий"
+}
+
+adjFuzzyPressureT1 {
+    key = "НИЗКИЙ" | 
+          "маленький" | 
+          "малый"
+}
+
+adjFuzzyPressureT2 {
+    key = "средний" | 
+          "обычный"
+}
+
+adjFuzzyPressureT3 {
+    key = "высокий" | 
+          "большой"
+}
+
+adjFuzzyBodyTemperatureT1 {
+    key = "низкая" | 
+          "незначительная" | 
+          "пониженная"
+}
+
+adjFuzzyBodyTemperatureT2 {
+    key = "нормальная" | 
+          "в норме" | 
+          "допустимая" | 
+          "фебрильная"
+}
+
+adjFuzzyBodyTemperatureT23 {
+    key = "повышенная" | 
+          "субфебрильная" | 
+          "выше средней"
+}
+
+adjFuzzyBodyTemperatureT3 {
+    key = "высокая" | 
+          "опасная"
+}
+
+adjFuzzyBodyTemperatureT30 {
+    key = "очень высокая" | 
+          "критичная"
+}
+
+adjFuzzyThroatPainT1 {
+    key = "слабая" | 
+          "незначительная"
+}
+
+adjFuzzyThroatPainT2 {
+    key = "выраженная" | 
+          "резкая"
+}
+
+adjFuzzyThroatPainT3 {
+    key = "сильная" | 
+          "невыносимая"
+}
+
+adjFuzzyMucousColorT1 {
+    key = "розоватый"
+}
+
+adjFuzzyMucousColorT2 {
+    key = "красноватый"
+}
+
+adjFuzzyMucousColorT3 {
+    key = "бордовый"
+}
+
+adjFuzzyTonsilPlaqueColorT1 {
+    key = "белый-пленчатый"
+}
+
+adjFuzzyTonsilPlaqueColorT2 {
+    key = "серовато-белый пленчатый"
+}
+
+adjFuzzyTonsilPlaqueColorT3 {
+    key = "серовато-пленчатый"
+}
+
+adjFuzzySwallowingPainT1 {
+    key = "слабая" | 
+          "незначительная"
+}
+
+adjFuzzySwallowingPainT2 {
+    key = "ощутимая" | 
+          "резкая"
+}
+
+adjFuzzySwallowingPainT3 {
+    key = "сильная" | 
+          "невыносимая"
+}
+
+adjFuzzyPulseT1 {
+    key = "слабый"
+}
+
+adjFuzzyPulseT2 {
+    key = "нормальный"
+}
+
+adjFuzzyPulseT3 {
+    key = "частый"
+}
+
+adjFuzzyNasalDischargeT1 {
+    key = "незначительные" | 
+          "слабые" | 
+          "незаметные"
+}
+
+adjFuzzyNasalDischargeT2 {
+    key = "повышенные" | 
+          "беспокоящие"
+}
+
+adjFuzzyNasalDischargeT3 {
+    key = "обильные" | 
+          "сильные"
+}
+
+adjFuzzyPlaqueAreaT1 {
+    key = "незначительная"
+}
+
+adjFuzzyPlaqueAreaT2 {
+    key = "нормальная" | 
+          "допустимая"
+}
+
+adjFuzzyPlaqueAreaT3 {
+    key = "большая"
+}
+
+adjFuzzySugarLevelT01 {
+    key = "Гипогликемия" | 
+          "А"
+}
+

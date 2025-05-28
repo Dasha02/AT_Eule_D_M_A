@@ -1,0 +1,88 @@
+proto
+
+encoding "utf8";
+TTextMinerConfig {
+  Dictionary = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/dic.gzt";     
+  PrettyOutput = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/debug.html"; 
+  Input = {
+    File = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/input.txt";          
+    Type = dpl;               
+  }
+  Articles = [
+    { Name = "temporal" },
+    { Name = "fuzzy" }    
+  ]
+  Facts = [
+    { Name = "TempLexeme" },
+    { Name = "FuzzyLexeme" }
+  ]
+  Output = {
+    File = "/home/helga/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/resources/libTemp/output.xml";        
+    Format = xml;
+  }
+}
+
+
+дик
+
+encoding "utf8";
+
+import "base.proto";     
+import "articles_base.proto";
+
+import "facttypes.proto";
+import "kwtypes.proto";
+
+import "preps.gzt";
+import "nouns.gzt";
+import "advs.gzt";
+import "adjs.gzt";S
+import "nums.gzt";
+
+
+TAuxDicArticle "temporal"
+{
+    key = { "tomita:temporal_lex.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "fuzzy"
+{
+    key = { "tomita:fuzzy_lex.cxx" type=CUSTOM }
+    
+    
+    
+    
+    
+Indistinct -> Adv<kwset=fuzzy>;
+
+Inaccurate -> Adj<kwset = fuzzy>;
+
+Indefinite -> Adv<kwset = fuzzy>;
+
+FuzLex -> Indistinct interp(FuzzyLexeme.Indistinct) | Inaccurate interp(FuzzyLexeme.Inaccurate) | Indefinite interp(FuzzyLexeme.Indefinite);
+}
+
+
+
+
+
+
+﻿import "base.proto";
+import "facttypes_base.proto";
+
+message TempLexeme: NFactType.TFact 
+{
+    optional string Point = 1;
+	optional string Interval = 2;
+	optional string Period = 3;
+	optional string Start = 4;
+	optional string End = 5;
+	optional string Duration = 6;
+}
+
+message FuzzyLexeme: NFactType.TFact 
+{
+    optional string Indistinct = 1; //нечеткие
+	optional string Inaccurate = 2; //неточные
+	optional string Indefinite = 3; //неопределенные
+}
